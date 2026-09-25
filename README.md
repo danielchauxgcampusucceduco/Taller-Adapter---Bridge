@@ -56,7 +56,7 @@ src/main/java/edu/ucc/patterns
 
 ```bash
 mvn clean compile
-mvn exec:java -Dexec.mainClass="edu.ucc.patterns.App"
+mvn exec:java
 ```
 
 También puede compilarse sin Maven desde la raíz:
