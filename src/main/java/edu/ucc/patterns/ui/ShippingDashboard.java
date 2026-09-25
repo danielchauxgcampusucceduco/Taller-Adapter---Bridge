@@ -43,6 +43,7 @@ import java.util.List;
 import java.util.Locale;
 
 /** Swing frontend that lets a user operate both patterns in one real-life flow. */
+@SuppressWarnings("serial") // The desktop screen is not persisted between executions.
 public final class ShippingDashboard extends JFrame {
     private final LogisticsService service = new LogisticsService(new InMemoryOrderRepository());
     private final List<ShippingProvider> providers = List.of(

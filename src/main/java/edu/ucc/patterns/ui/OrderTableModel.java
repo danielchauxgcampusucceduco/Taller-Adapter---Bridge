@@ -5,6 +5,7 @@ import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("serial") // Swing serializes UI state; this model is intentionally session-only.
 public final class OrderTableModel extends AbstractTableModel {
     private final String[] columns = {"Guía", "Destinatario", "Proveedor", "Estado", "Entrega estimada"};
     private final List<ShippingOrder> orders = new ArrayList<>();
